@@ -1,0 +1,120 @@
+*{
+    font-family: 'Roboto' , sans-serif;
+    box-sizing: border-box;
+}
+
+.encabezado{
+    display: flex;
+    background-color: #222222;
+    font-family: 'Roboto';
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.logo{
+    padding: 13px 0;
+}
+
+.titulo-principal{
+    font-size: 30px;
+
+}
+
+.texto-verde{
+    color: #39B24A;
+    font-weight: 700;
+}
+
+.texto-blanco{
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.texto-rojo{
+    color: #FC200C;
+    font-weight: 700;
+}
+
+.contenedor-principal{
+    background: linear-gradient(to right, #ffffff, #f3f3f3) ;
+    display: flex;
+    padding: 50px 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contenedor-promocion{
+    position: relative;
+    width: 500px;
+}
+
+.titulo-secundario{
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    left: 8%;
+}
+
+.background{
+    margin-right: 10px;
+    width: 500px;
+}
+
+.lista-links{
+    display: flex;
+    justify-content: end;
+    width: 300px;
+}
+
+.link{
+    padding: 15px 20px;
+    color: #F3F3F3;
+}
+
+.contenedor-pizzas{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 500px;
+}
+
+.top{
+    position:inherit;
+    font-weight: 700;
+    color:#FC200C;
+    padding: 20px 25%;
+
+}
+.contendor-terciario{
+    position: relative;
+    
+}
+.titulo-top{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 20px 18%;
+
+}
+
+.lista-pizzas{
+    list-style: decimal;
+    list-style-position: inside;
+    font-weight: 700;
+
+}
+
+.icono-pizza{
+    position: absolute;
+    right: 15%;
+}
+.pizza{
+    padding: 10px 10%;
+}
+
+.footer{
+    display: flex;
+    background-color: #222222;
+    font-family: 'Roboto', sans-serif;
+}
