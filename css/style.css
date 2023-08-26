@@ -7,29 +7,37 @@
     display: flex;
     background-color: #222222;
     font-family: 'Roboto';
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    
 
+
+}
+.contenedor-header{
+    display: flex;
+    align-items: center;
 
 }
 
 .logo{
     padding: 13px 0;
+    margin: 0 25px;
 }
 
 .titulo-principal{
     font-size: 30px;
-
 }
 
 .texto-verde{
     color: #39B24A;
     font-weight: 700;
+
 }
 
 .texto-blanco{
     color: #FFFFFF;
     font-weight: 700;
+    
 }
 
 .texto-rojo{
@@ -37,12 +45,28 @@
     font-weight: 700;
 }
 
+.menu-nav{
+    margin-right: 5%;
+}
+
+.lista-links{
+    display: flex;
+    justify-content: end;
+    
+}
+
+.link{
+    padding: 3% 6%;
+    color: #F3F3F3;
+}
+
 .contenedor-principal{
     background: linear-gradient(to right, #ffffff, #f3f3f3) ;
     display: flex;
-    padding: 50px 30px;
+    padding: 5% 2.5%;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .contenedor-promocion{
@@ -62,22 +86,15 @@
     width: 500px;
 }
 
-.lista-links{
-    display: flex;
-    justify-content: end;
-    width: 300px;
-}
-
-.link{
-    padding: 15px 20px;
-    color: #F3F3F3;
-}
 
 .contenedor-pizzas{
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
     width: 500px;
+    border-radius: 8px;
+    height: 360px;
+    position: relative;
 }
 
 .top{
@@ -87,10 +104,12 @@
     padding: 20px 25%;
 
 }
+
 .contendor-terciario{
     position: relative;
     
 }
+
 .titulo-top{
     font-size: 20px;
     font-weight: 800;
@@ -107,14 +126,83 @@
 
 .icono-pizza{
     position: absolute;
-    right: 15%;
+    right: 10%;
+    top:30%;
+    
 }
+
 .pizza{
     padding: 10px 10%;
+}
+
+.menu-nav-footer{
+    margin: 10px;
+
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 50%;
+    align-items: center;
+
+}
+
+.logo-footer{
+    width: 80px;
+    margin: 10px;
+}
+
+.titulo-footer{
+    display: flex;
+
 }
 
 .footer{
     display: flex;
     background-color: #222222;
     font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+    
+}
+
+@media (max-width:1140px){
+    
+    .contenedor-principal{
+        flex-direction: column;
+        background: linear-gradient(to bottom, #ffffff, #eeeaea) ;
+     
+    }
+
+    .contenedor-promocion{
+        margin-bottom: 30px;
+        
+    }
+
+    .background{
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width:800px){
+
+    .menu-nav{
+        display: none;
+    }
+    .contenedor-principal{
+        width: 100vw;
+    }
+
+    .contenedor-promocion{
+        width:95%;
+    }
+
+    .contenedor-pizzas{
+        width: 95%;
+    }
+
+    .contenedor-footer{
+        margin-right: 15px;
+    }
 }
